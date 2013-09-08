@@ -77,7 +77,7 @@ public static void initialize() {
 
     final URLName unusedUrlName = null;
     IMAPSSLStore store = new IMAPSSLStore(session, unusedUrlName);
-    final String emptyPassword = "godspeed123";
+    final String emptyPassword = "";
     store.connect(host, port, userEmail, emptyPassword);
     return store;
   }
