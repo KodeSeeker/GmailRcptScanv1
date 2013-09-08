@@ -115,7 +115,7 @@ public static SMTPTransport connectToSmtp(String host,
     final URLName unusedUrlName = null;
     SMTPTransport transport = new SMTPTransport(session, unusedUrlName);
     // If the password is non-null, SMTP tries to do AUTH LOGIN.
-    final String emptyPassword = "godspeed123";
+    final String emptyPassword = "";
     transport.connect(host, port, userEmail, emptyPassword);
     System.out.println("The  return code is "+transport.getLastReturnCode());
     
